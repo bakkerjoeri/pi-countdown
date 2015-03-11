@@ -177,36 +177,44 @@ body {
   font-size: 7.0em;
   text-shadow: black 0px 2px 15px;
 }
-/* line 15, ../scss/modules/_main.scss */
+@media screen and (max-width: 500px) {
+  /* line 2, ../scss/modules/_main.scss */
+  .main .pi {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 5.5em;
+  }
+}
+/* line 22, ../scss/modules/_main.scss */
 .main h1, .main h2 {
   width: 100%;
   color: white;
   text-align: center;
 }
-/* line 21, ../scss/modules/_main.scss */
+/* line 28, ../scss/modules/_main.scss */
 .main p, .main ul, .main h2, .main a {
   text-shadow: black 0px 2px 6px;
 }
-/* line 25, ../scss/modules/_main.scss */
+/* line 32, ../scss/modules/_main.scss */
 .main h2 {
   font-size: 2.0em;
   margin-bottom: 0.6em;
   padding-bottom: 1.0em;
   border-bottom: 1px rgba(255, 255, 255, 0.6) dashed;
 }
-/* line 32, ../scss/modules/_main.scss */
+/* line 39, ../scss/modules/_main.scss */
 .main p, .main ul {
   color: white;
   font-size: 1.6em;
   line-height: 1.6em;
   margin-bottom: 1.8em;
 }
-/* line 39, ../scss/modules/_main.scss */
+/* line 46, ../scss/modules/_main.scss */
 .main ul {
   list-style-type: circle;
   list-style-position: outside;
 }
-/* line 44, ../scss/modules/_main.scss */
+/* line 51, ../scss/modules/_main.scss */
 .main a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
@@ -219,11 +227,11 @@ body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/* line 51, ../scss/modules/_main.scss */
+/* line 58, ../scss/modules/_main.scss */
 .main a:hover, .main a:active {
   color: white;
 }
-/* line 56, ../scss/modules/_main.scss */
+/* line 63, ../scss/modules/_main.scss */
 .main .article {
   -moz-user-select: text;
   -ms-user-select: text;
@@ -234,7 +242,7 @@ body {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 64, ../scss/modules/_main.scss */
+/* line 71, ../scss/modules/_main.scss */
 .main .article ul {
   -moz-column-count: 2;
   -webkit-column-count: 2;

@@ -10,6 +10,13 @@
 		font-size: 7.0em;
 
 		@include text-shadow(black 0px 2px 15px);
+
+		@media screen and (max-width: 500px) {
+			padding-top: 20px;
+			margin-bottom: 30px;
+
+			font-size: 5.5em;
+		}
 	}
 
 	h1, h2 {
