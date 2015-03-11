@@ -1,0 +1,68 @@
+.main {
+	.pi {
+		@include user-select(none);
+		
+		padding-top: 40px;
+		margin-bottom: 50px;
+		display: block;
+
+		font-style: italic;
+		font-size: 7.0em;
+
+		@include text-shadow(black 0px 2px 15px);
+	}
+
+	h1, h2 {
+		width: 100%;
+		color: white;
+		text-align: center;
+	}
+
+	p, ul, h2, a {
+		@include text-shadow(black 0px 2px 6px);
+	}
+
+	h2 {
+		font-size: 2.0em;
+		margin-bottom: 0.6em;
+		padding-bottom: 1.0em;
+		border-bottom: 1px rgba(white, 0.6) dashed;
+	}
+
+	p, ul {
+		color: white;
+		font-size: 1.6em;
+		line-height: 1.6em;
+		margin-bottom: 1.8em;
+	}
+
+	ul {
+		list-style-type: circle;
+		list-style-position: outside;
+	}
+
+	a {
+		text-decoration: none;
+		color: rgba(white, 0.7);
+
+		@include transition-property(color);
+		@include transition-duration(0.4s);
+
+		&:hover, &:active {
+			color: white;
+		}
+	}
+
+	.article {
+		@include user-select(text);
+
+		max-width: 560px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: rgba(black, 0.6);
+
+		ul {
+			@include column-count(2);
+		}
+	}
+}

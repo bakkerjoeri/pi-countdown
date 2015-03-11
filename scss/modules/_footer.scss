@@ -1,0 +1,24 @@
+.footer {
+	@include user-select(none);
+	line-height: $height-footer;
+
+	text-align: center;
+	font-size: 1.6em;
+	color: rgba(white, 0.5);
+	font-weight: 100;
+
+	a {
+		text-decoration: none;
+		color: rgba(white, 0.7);
+		@include transition-property(color);
+		@include transition-duration(0.4s);
+
+		&:hover, &:focus {
+			color: white;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.2em;
+	}
+}

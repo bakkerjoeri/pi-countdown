@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta property="og:description" content="Countdown to Super Pi Day!" />
+		<meta property="og:image" content="http://pi.joeri.me/images/backgrounds/pie.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/appicon.png" />
+		<link rel="icon" type="image/png" href="images/icons/favicon.ico">
+
+		<title>π</title>
+
+		<script data-main="scripts/main.js" src="scripts/vendor/requirejs/require.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-11411384-7', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body>
+		<div class="page-wrap">
+			<div class="main">
+				<h1 class="pi">π</h1>
+				<div class="time">
+					<p class="time-info">
+						<span id="timeUntilPi"></span> 
+						until 
+						<span id="piMoment"></span> 
+						the ultimate super π day moment
+					</p>
+				</div>
+
+				<div class="footer-push"></div>
+			</div>
+
+			<footer class="footer">
+				Pi Day countdown by <a href="http://twitter.com/bakkerjoeri">Joeri Bakker</a> | Hungry for some <a href="/pie">apple pie</a>?
+			</footer>
+		</div>
+	</body>
+</html>

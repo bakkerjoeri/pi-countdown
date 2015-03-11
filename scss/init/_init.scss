@@ -1,0 +1,24 @@
+//====================================================================//
+//  Import necessary utilities, parts and resources for the project.  //
+//====================================================================//
+
+//---------------------//
+//  Compass utilities  //
+//---------------------//
+@import 
+	"compass/css3",
+	"compass/css3/user-interface",
+	"compass/layout/sticky-footer";
+
+//-----------------------//
+//  Project definitions  //
+//-----------------------//
+@import
+	"init/constants",
+	"init/webfonts",
+	"mixins/all",
+	"placeholders/all";
+
+//---------------------//
+//  Vendor stylesheets //
+//---------------------//

@@ -1,0 +1,31 @@
+p.time-info {
+	@include user-select(none);
+	
+	width: 100%;
+
+	text-align: center;
+	color: white;
+	font-style: italic;
+	line-height: 2.4em;
+
+	@include text-shadow(rgba(black, 0.6) 0px 2px 4px, black 0px 2px 15px);
+
+	#timeUntilPi,
+	#piMoment {
+		font-size: 1.4em;
+		font-family: sans-serif;
+		font-style: normal;
+		display: block;
+	}
+
+		font-size: 2.6em;
+
+		@media screen and (max-width: 800px) {
+			font-size: 2.0em;
+		}
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.8em;
+			line-height: 2.6em;
+		}
+}
