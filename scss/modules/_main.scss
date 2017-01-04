@@ -45,7 +45,7 @@
 
 	ul {
 		list-style-type: circle;
-		list-style-position: outside;
+		list-style-position: inside;
 	}
 
 	a {
@@ -71,5 +71,9 @@
 		ul {
 			@include column-count(2);
 		}
+	}
+
+	.hidden {
+		display: none;
 	}
 }
