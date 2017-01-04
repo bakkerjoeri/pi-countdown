@@ -2,21 +2,16 @@
   "name": "pi-countdown",
   "version": "1.1.0",
   "description": "A countdown to the ultimate pi moment",
-
   "authors": [
     "Joeri Bakker <bakkerjoeri@gmail.com>"
   ],
-
   "dependencies": {
     "requirejs": "latest",
-    "momentjs": "latest",
-    "underscore": "latest"
+    "momentjs": "latest"
   },
-
   "ignore": [
     "**/.*",
     "scss",
-    ".bowerrc"
     ".sass-cache"
   ]
 }
