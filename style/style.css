@@ -1,73 +1,322 @@
-/*
-Error: File to import not found or unreadable: body.
-       Load paths:
-         Compass::SpriteImporter
-         /Applications/MAMP/htdocs/pi-countdown/scss
-         /usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets
-        on line 7 of /Applications/MAMP/htdocs/pi-countdown/scss/modules/_all.scss
-        from line 7 of /Applications/MAMP/htdocs/pi-countdown/scss/style.scss
+/*--------------
+	Base imports
+--------------*/
+/*---------------------
+	Compass reset rules
+---------------------*/
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-2: @import
-3: 	"init/init",
-4: 	"base",
-5: 	"states",
-6: 	"layout/all",
-7: 	"modules/all";
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/pi-countdown/scss/modules/_all.scss:7
-/Applications/MAMP/htdocs/pi-countdown/scss/style.scss:7
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: body.\A        Load paths:\A          Compass::SpriteImporter\A          /Applications/MAMP/htdocs/pi-countdown/scss\A          /usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 7 of /Applications/MAMP/htdocs/pi-countdown/scss/modules/_all.scss\A         from line 7 of /Applications/MAMP/htdocs/pi-countdown/scss/style.scss\A \A 2: @import\A 3: 	\"init/init\",\A 4: 	\"base\",\A 5: 	\"states\",\A 6: 	\"layout/all\",\A 7: 	\"modules/all\";"; }
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*-----------------------
+	Project's reset rules
+-----------------------*/
+/*---------------
+	General rules
+---------------*/
+/* line 14, ../scss/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 20, ../scss/_base.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 26, ../scss/_base.scss */
+body {
+  background-color: white;
+}
+
+/*-----------------
+	Base typography
+-----------------*/
+/* line 35, ../scss/_base.scss */
+body {
+  font-family: Georgia, serif;
+  font-size: 62.5%;
+}
+
+/* line 1, ../scss/layout/_page-wrap.scss */
+.page-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../scss/layout/_main.scss */
+.main {
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* line 1, ../scss/layout/_time.scss */
+.time {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.main {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -80px;
+}
+/* line 18, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.main .footer-push {
+  height: 80px;
+}
+
+/* line 20, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.footer {
+  clear: both;
+  position: relative;
+  height: 80px;
+}
+
+/* line 3, ../scss/layout/_footer.scss */
+.footer {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 1, ../scss/modules/_body.scss */
+body {
+  background-image: url("../images/backgrounds/pie.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 2, ../scss/modules/_main.scss */
+.main .pi {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-top: 40px;
+  margin-bottom: 50px;
+  display: block;
+  font-style: italic;
+  font-size: 7.0em;
+  text-shadow: black 0px 2px 15px;
+}
+@media screen and (max-width: 500px) {
+  /* line 2, ../scss/modules/_main.scss */
+  .main .pi {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 5.5em;
+  }
+}
+/* line 22, ../scss/modules/_main.scss */
+.main h1, .main h2 {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+/* line 28, ../scss/modules/_main.scss */
+.main p, .main ul, .main h2, .main a {
+  text-shadow: black 0px 2px 6px;
+}
+/* line 32, ../scss/modules/_main.scss */
+.main h2 {
+  font-size: 2.0em;
+  margin-bottom: 0.6em;
+  padding-bottom: 1.0em;
+  border-bottom: 1px rgba(255, 255, 255, 0.6) dashed;
+}
+/* line 39, ../scss/modules/_main.scss */
+.main p, .main ul {
+  color: white;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-bottom: 1.8em;
+}
+/* line 46, ../scss/modules/_main.scss */
+.main ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+/* line 51, ../scss/modules/_main.scss */
+.main a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 58, ../scss/modules/_main.scss */
+.main a:hover, .main a:active {
+  color: white;
+}
+/* line 63, ../scss/modules/_main.scss */
+.main .article {
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 71, ../scss/modules/_main.scss */
+.main .article ul {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+/* line 76, ../scss/modules/_main.scss */
+.main .hidden {
+  display: none;
+}
+
+/* line 1, ../scss/modules/_time-info.scss */
+p.time-info, div.time-info {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  line-height: 2.4em;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, black 0px 2px 15px;
+  font-size: 2.0em;
+}
+/* line 15, ../scss/modules/_time-info.scss */
+p.time-info #timeUntilTargetDate,
+p.time-info #targetDate, div.time-info #timeUntilTargetDate,
+div.time-info #targetDate {
+  font-size: 1.4em;
+  font-family: sans-serif;
+  font-style: normal;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../scss/modules/_time-info.scss */
+  p.time-info, div.time-info {
+    font-size: 1.8em;
+    line-height: 2.6em;
+  }
+}
+
+/* line 1, ../scss/modules/_footer.scss */
+.footer {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+}
+/* line 10, ../scss/modules/_footer.scss */
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 16, ../scss/modules/_footer.scss */
+.footer a:hover, .footer a:focus {
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../scss/modules/_footer.scss */
+  .footer {
+    font-size: 1.2em;
+  }
+}
