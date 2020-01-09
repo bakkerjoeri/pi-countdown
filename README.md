@@ -1,5 +1,5 @@
 # 🥧 Pi Day countdown
-A countdown to the upcoming Pi Day. A live version is found at [http://pi.joeri.me]().
+A countdown to the upcoming Pi Day. A live version is found at [pi.joeri.me](http://pi.joeri.me).
 
 ## Technologies
 moment.js is handling a bunch of date and time related tasks. Besides that, it's all HTML, Javascript and SCSS.
